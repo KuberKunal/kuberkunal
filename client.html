@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yellow and Red Background with Half Arrow</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #top {
+            height: 70%;
+            background-color: yellow;
+        }
+        
+        #bottom {
+            height: 30%;
+            background-color: red;
+            position: relative;
+        }
+        
+        #arrow {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 110px solid yellow;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+        #circle {
+            position: absolute;
+            top: calc(50% + 40px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #smiley {
+            color: white;
+            font-size: 20px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    
+    <div id="top">
+        <div id="text" style="text-align: center;" >Pinak Idea Lab</div>
+        <div id="circle">
+            <div id="smiley">:)</div>
+        </div>
+        </div>
+    <div id="bottom">
+        <div id="arrow"></div>
+    </div>
+
+    <script></script>
+</body>
+</html>
